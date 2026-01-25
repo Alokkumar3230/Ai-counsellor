@@ -1,4 +1,10 @@
-import SamplePage from './pages/SamplePage';
+import LandingPage from './pages/LandingPage';
+import LoginPage from './pages/LoginPage';
+import OnboardingPage from './pages/OnboardingPage';
+import DashboardPage from './pages/DashboardPage';
+import CounsellorPage from './pages/CounsellorPage';
+import UniversitiesPage from './pages/UniversitiesPage';
+import ApplicationPage from './pages/ApplicationPage';
 import type { ReactNode } from 'react';
 
 interface RouteConfig {
@@ -10,10 +16,40 @@ interface RouteConfig {
 
 const routes: RouteConfig[] = [
   {
-    name: 'Sample Page',
+    name: 'Landing',
     path: '/',
-    element: <SamplePage />
-  }
+    element: <LandingPage />,
+  },
+  {
+    name: 'Login',
+    path: '/login',
+    element: <LoginPage />,
+  },
+  {
+    name: 'Onboarding',
+    path: '/onboarding',
+    element: <OnboardingPage />,
+  },
+  {
+    name: 'Dashboard',
+    path: '/dashboard',
+    element: <DashboardPage />,
+  },
+  {
+    name: 'AI Counsellor',
+    path: '/counsellor',
+    element: <CounsellorPage />,
+  },
+  {
+    name: 'Universities',
+    path: '/universities',
+    element: <UniversitiesPage />,
+  },
+  {
+    name: 'Application',
+    path: '/application',
+    element: <ApplicationPage />,
+  },
 ];
 
 export default routes;
